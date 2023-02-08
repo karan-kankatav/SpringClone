@@ -1,0 +1,286 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+
+/* Navigation Bar */
+
+.navBar{
+    background-color: #0e526c;
+    padding: 0.8rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navigation{
+    width: 50%;
+}
+.navigation ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Teko', sans-serif;
+
+}
+
+/* Home */
+
+.back-img{
+    height: 80vh;
+    background: url(https://www.hatch.com/-/media/Hatch-Corporate/Projects/Services-and-Technologies/technology-development.jpg?h=580&iar=0&w=1920&hash=30731DFFBF9D1800D73D0D8D60022A59);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+#about-company{
+    position: absolute;
+    top: 10rem;
+    left: 1.5rem;
+    color: white;
+    width: 50%;
+    font-family: 'Heebo', sans-serif !important;
+    text-align: center;
+    line-height: 1.5em;
+}
+#about-company h2{
+    font-size: 2.3em;
+    line-height: 1.1em;
+}
+
+#about-company h2 span{
+    color:#15A864 ;
+}
+
+/* tech-verticals */
+
+.verticals{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 8rem;
+}
+
+.cards{
+    border: 1px solid black;
+    width: 20rem;
+    font-size: 1.3rem;
+}
+
+.cards img{
+    height: 17rem;
+    width: inherit;
+}
+
+.details{
+    font-size: 1.2rem;
+    color: rgb(68, 67, 67);
+    padding: 1rem;
+    font-family: 'Teko', sans-serif;;
+}
+
+.card-title{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Heebo-lite', sans-serif !important;
+}
+
+#app-veticals{
+    background-color: gainsboro;
+    margin-top: -4rem;
+}
+
+#tech-verticals{
+    background-color: rgb(237 241 255);
+
+}
+
+/* Technologies */
+
+#tech-stack{
+    width: 90%;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 4rem 0rem;
+}
+
+.techs{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Heebo', sans-serif !important;    
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.techs img{
+    width: 4rem;
+    height: 6rem;
+    margin-right: 1.2rem;
+}
+
+#technologies{
+    padding-bottom: 5rem;
+}
+
+/* About Us */
+#about-us{
+    padding: 2rem 4rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Heebo', sans-serif !important;
+    color: #465074;
+    position: absolute ;
+    top: 0;
+}
+
+#about-back{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Y_XnosLYmBH5B6lhqAyrX_LiZibIKUcNGA&usqp=CAU) no-repeat center center;
+    opacity: 0.1;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+}
+
+/* Contact us */
+
+#contact-us{
+    display: flex;
+    background-color: #0e526c;
+    justify-content: space-evenly;
+
+}
+.info-container{
+    display: flex;
+    padding: 2rem;
+}
+
+.info-container img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem 2rem;
+}
+
+#contact-info{
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    font-size: 1.2rem;
+    /* text-align: center; */
+    font-family: 'Heebo', sans-serif !important;
+    color: white;
+}
+
+/* Inquiry form */
+
+#inquiry{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 60%;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item{
+    margin: 0.3rem;
+    height: 1.5rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.form-item:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #b5a147b0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    height: 2rem;
+    margin: 1rem 0rem;
+}
+
+.btn{
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.4;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+#btn1{
+    color: #fff;
+    background-color: #dd6e6e;
+}
+
+#btn2{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#btn1:hover{
+    color: #fff;
+    background-color: #c55b5b;
+}
+
+#btn2:hover{
+    color: #fff;
+    background-color: #1262b9;
+    border-color: #007bff;
+}
+
+/* Footer */
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    font-size: 1.04rem;
+    font-weight: bold;
+    background-color: #0e526c;
+    text-align: center;
+    color: white;
+}
+
+#uparrow{
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: sticky;
+    z-index: 1;
+    left:94%;
+    bottom: 2rem;
+}
