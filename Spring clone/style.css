@@ -19,7 +19,7 @@ body{
 }
 
 .navigation{
-    width: 50%;
+    width: 70%;
 }
 .navigation ul{
     list-style-type: none;
@@ -33,6 +33,7 @@ body{
     color: white;
     font-size: 1.4rem;
     font-family: 'Teko', sans-serif;
+    cursor: pointer;
 
 }
 
@@ -70,6 +71,7 @@ body{
 
 .verticals{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 8rem;
 }
@@ -146,6 +148,8 @@ body{
     font-family: 'Heebo', sans-serif !important;
     color: #465074;
     position: absolute ;
+    overflow: auto;
+    height: 36rem;
     top: 0;
 }
 
@@ -161,13 +165,16 @@ body{
 
 #contact-us{
     display: flex;
+    flex-wrap: wrap;
     background-color: #0e526c;
-    justify-content: space-evenly;
-
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
 }
+
 .info-container{
     display: flex;
-    padding: 2rem;
+    padding: 2rem 0rem;
 }
 
 .info-container img{
@@ -177,7 +184,7 @@ body{
 }
 
 #contact-info{
-    border-right: 1px solid white;
+    /* border-right: 1px solid white; */
     display: flex;
     flex-direction: column;
 }
@@ -194,11 +201,13 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    width: 60%;
+    max-width: 60%;
 }
 .form-container{
     display: flex;
     flex-direction: column;
+    margin: 2rem 0rem;
+
 }
 
 .form-item{
@@ -283,4 +292,54 @@ body{
     z-index: 1;
     left:94%;
     bottom: 2rem;
+}
+
+/* Mediaqueries */
+
+@media only screen and (max-width: 970px) {
+    #tech-stack{
+        grid-template-columns: auto auto;
+    }
+    .navBar{
+        flex-direction: column;
+        align-items: center;
+    }
+    #about-company{
+        top: 18rem;
+     }
+    .verticals{
+        flex-direction: column;
+    }
+    .cards{
+        margin: auto;
+        margin-top: 2rem;
+        width: 50vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #tech-stack{
+        grid-template-columns: auto;
+        margin: auto;
+    }
+    .techs{
+        font-size: 1.4rem;
+        flex-direction: column;
+    }
+    .techs img{
+        width: 11rem;
+        height: 10rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+    }
+    #about-company{
+       top: 20rem;
+       width: 65%;
+    }
 }
